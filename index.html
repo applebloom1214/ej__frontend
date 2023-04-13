@@ -11,8 +11,45 @@
     <link rel="icon" href="img/favicon/android-icon-48x48.png" sizes="48x48" />
   </head>
   <body>
-    <header class="ej__header">
-      <img src="img/logo/logo.svg" />
-    </header>
+    <!-- PC 화면 -->
+    <section id="pc">
+      <header class="ej__header">
+        <div class="ej__logocommunity">
+          <img class="ej__logo" src="img/logo/logo.svg" />
+          <span class="ej__community">커뮤니티</span>
+        </div>
+        <div class="ej__searchbar">
+          <input
+            type="text"
+            class="ej__searchbar__input"
+            placeholder="검색어를 입력해주세요."
+          />
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+        <div class="ej__rightnav">
+          <span class="ej__rightnav__home">홈으로</span>
+          <span class="ej__rightnav__login">로그인</span>
+          <span>회원가입</span>
+        </div>
+      </header>
+      <main class="ej__main"></main>
+    </section>
+
+    <!--MOBILE 화면 -->
+    <section id="mob">
+      <header class="ej__header">
+        <div class="ej__logocommunity">
+          <i class="fa-solid fa-bars fa-xl"></i>
+          <img class="ej__logo" src="img/logo/logo.svg" />
+        </div>
+        <div class="ej__searchbar--mob">
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+      </header>
+    </section>
   </body>
+  <script
+    src="https://kit.fontawesome.com/cbc86f8bd3.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

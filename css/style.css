@@ -3,13 +3,123 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 1000vh;
+    height: 100vh;
 }
 
 .ej__header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     background-color: white;
     width: 100%;
     height: 70px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid black;
+}
+
+.ej__logocommunity{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-right: 100px;
+}
+
+.ej__logo{
+    margin-right: 30px;
+}
+
+.ej__community{
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ej__searchbar{
+    position: relative;
+    font-size: 13px;
+    border-radius: 10px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 276px;
+    height: 40px;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.06);
+    margin-right: 100px;
+    border: 3px solid white;
+}
+
+.ej__searchbar__input{
+    width: 80%;
+    border: none;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.ej__searchbar i{
+    position : absolute;
+    left: 15px;
+    margin-right: 7px;
+}
+
+.ej__rightnav{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 40px;
+}
+
+.ej__rightnav__home{
+    margin-right: 15px;
+}
+
+.ej__rightnav__login{
+    margin-right: 15px;
+}
+
+.ej__searchbar:hover{
+    border: 3px solid yellow;
+}
+
+.ej__rightnav__home{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: yellow;
+}
+
+.ej__rightnav__home:hover{
+    background-color: rgb(231, 231, 4);
+}
+
+.fa-bars{
+    margin-top: -5px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width:944px) {
+    #pc{
+        display: none;
+    }
+
+    .ej__header{
+        justify-content: space-between;
+    }
+
+    .ej__logocommunity{
+        margin-left: 15px;
+    }
+
+    .ej__searchbar--mob i{
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width:945px) {
+    #mob{
+        display: none;
+    }
 }
