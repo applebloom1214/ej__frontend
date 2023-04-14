@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(255, 222, 31);
+    background-image: url('../img/background/yellow.avif');
+    font-family: 'Sunflower', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -17,7 +18,7 @@ body{
     background-color: white;
     width: 100%;
     height: 70px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid yellow;
 }
 
 .ej__logocommunity{
@@ -32,7 +33,6 @@ body{
 }
 
 .ej__community{
-    margin-top: -5px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -115,10 +115,55 @@ body{
 }
 
 .ej__main__wrap{
+    margin-top: -480px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 60%;
     background-color: white;
 }
 
+.ej__main__introduce--purple{
+    color: purple;
+}
+
+.ej__main__introduce--pink{
+    color: magenta;
+}
+
+.ej__main__jobs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ej__main__job{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ej__main__job:hover{
+    transform: scale(1.1);
+}
+
+.ej__main__job--name{
+    margin-top: 30px;
+}
+
+.ej__main__community{
+    margin-top: 50px;
+}
+
+.ej__main__community__hotboard{
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+}
 
 
 /* Media Query 시작 */
