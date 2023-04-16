@@ -12,17 +12,15 @@ a{
     color: black;
 }
 
-/* Main 시작 */
-
 .ej__main{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100vh
 }
 
 .ej__main__wrap{
-    margin-top: -80px;
+    margin-top: -70px;
     letter-spacing: 5px;
     font-size: 30px;
     text-align: center;
@@ -32,6 +30,7 @@ a{
     width: 60%;
     background-color: white;
 }
+
 
 .ej__main__introduce--purple{
     color: purple;
@@ -63,59 +62,55 @@ a{
     margin-top: 30px;
 }
 
-.ej__main__community{
+/* main__recruit start */
+
+.ej__main__recruits__wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ej__main__recruits{
     margin-top: 50px;
 }
 
-.ej__main__community__text{
-    margin-bottom: 15px;
-}
-
-.ej__main__community__hotboards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.ej__main__recruit{
+    padding: 15px;
+    width: 230px;
+    height: 150px;
+    border: 1px solid yellow;
+    margin-top: 40px;
     font-size: 18px;
-    border-top: 1px solid yellow;
-    border-bottom: 1px solid yellow;
 }
 
-.ej__main__community__hotboard{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.ej__main__recruit__name{
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-.ej__main__community__left{
-    height: 70px;
-    display: flex;
-    align-items: center;
+.ej__main__recruit__etc{
+    margin-top: 10px;
+    text-align: left;
 }
 
-.ej__main__community__left__img{
-    margin-right: 15px;
-    width: 90px;
-    height: 50px;
+.ej__main__recruit__name, .ej__main__recruits__etc--location{
+    font-size: 16px;
+    opacity: 0.5;
 }
 
-.ej__main__community__left__title{
-    margin-right: 15px;
+.ej__main__recruits__etc--pay{
+    font-size: 16px;
 }
 
-.ej__main__community__left__repcnt{
-    color: purple;
-}
+
+/* main__recruit end */
+
 
 /* Media Query 시작 */
 @media screen and (max-width:944px) {
     #pc{
         display: none;
     }
-
 
     .ej__logocommunity{
         margin-left: 15px;
@@ -141,6 +136,43 @@ a{
         font-size: 12px;
     }
 
+
+    .ej__main{
+        overflow: auto;
+        height: 125vh;
+    }
+    
+    .ej__main__recruits{
+        margin-top: 20px;
+    }
+
+    .ej__main__recruit{
+        padding: 10px;
+        width: 170px;
+        height: 120px;
+        border: 1px solid yellow;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .ej__main__recruit__name{
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    .ej__main__recruit__etc{
+        margin-top: 10px;
+        text-align: left;
+    }
+    
+    .ej__main__recruit__name, .ej__main__recruits__etc--location{
+        font-size: 10px;
+        opacity: 0.5;
+    }
+    
+    .ej__main__recruits__etc--pay{
+        font-size: 10px;
+    }
 
 }
 
