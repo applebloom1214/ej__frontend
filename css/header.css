@@ -1,3 +1,8 @@
+html{
+    font-size: 18px;
+}
+
+
 /* Header 시작 */
 
 .ej__header{
@@ -25,12 +30,11 @@
 
 .ej__community{
     font-weight: bold;
-    font-size: 18px;
 }
 
 .ej__searchbar{
     position: relative;
-    font-size: 13px;
+    font-size: 0.8rem;
     border-radius: 10px;
     padding-left: 15px;
     display: flex;
@@ -58,7 +62,6 @@
 }
 
 .ej__rightnav{
-    font-size: 18px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -164,7 +167,6 @@ input[id="menuicon"]:checked + label + div{
 }
 
 .sidebarwrap{
-    font-size: 20px;
     margin-top: 80px;
     margin-left: 20px;
     display: flex;

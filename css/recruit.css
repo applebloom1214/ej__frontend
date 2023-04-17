@@ -1,3 +1,8 @@
+html{
+    font-size: 18px;
+}
+
+
 body{
     background-image: url('../img/background/yellow.avif');
     font-family: 'Sunflower', sans-serif;
@@ -20,9 +25,9 @@ a{
 }
 
 .ej__main__wrap{
-    margin-top: -70px;
+    margin-top: -80px;
     letter-spacing: 5px;
-    font-size: 30px;
+    font-size: 1.5em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -30,7 +35,6 @@ a{
     width: 60%;
     background-color: white;
 }
-
 
 .ej__main__introduce--purple{
     color: purple;
@@ -80,7 +84,7 @@ a{
     height: 150px;
     border: 1px solid yellow;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .ej__main__recruit__name{
@@ -94,12 +98,18 @@ a{
 }
 
 .ej__main__recruit__name, .ej__main__recruits__etc--location{
-    font-size: 16px;
+    font-size: 0.9rem;
     opacity: 0.5;
 }
 
 .ej__main__recruits__etc--pay{
-    font-size: 16px;
+    font-size: 0.9rem;
+    color: magenta;
+}
+
+.ej__main__recruit__name{
+    color: purple;
+    
 }
 
 
@@ -119,7 +129,7 @@ a{
 
     .ej__main__wrap{
         width: 100%;
-        font-size: 20px;
+        font-size: 1rem;
         margin-top: 20px;
     }
 
@@ -133,7 +143,7 @@ a{
     }
 
     .ej__main__community__hotboards{
-        font-size: 12px;
+        font-size: 0.9rem;
     }
 
 
@@ -152,7 +162,7 @@ a{
         height: 120px;
         border: 1px solid yellow;
         margin-top: 20px;
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
     .ej__main__recruit__name{
@@ -161,18 +171,22 @@ a{
     }
     
     .ej__main__recruit__etc{
-        margin-top: 10px;
+        margin-top: 0.5rem;
         text-align: left;
     }
     
     .ej__main__recruit__name, .ej__main__recruits__etc--location{
-        font-size: 10px;
-        opacity: 0.5;
+        font-size: 0.5rem;
+        opacity: 1;
     }
     
     .ej__main__recruits__etc--pay{
-        font-size: 10px;
+        font-size: 0.5rem;
+        color: magenta;
     }
+
+
+
 
 }
 
