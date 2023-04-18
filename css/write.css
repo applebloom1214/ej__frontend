@@ -1,0 +1,147 @@
+html{
+    font-size: 18px;
+}
+
+body{
+    background-image: url('../img/background/yellow.avif');
+    font-family: 'Sunflower', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main 시작 */
+
+.ej__main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.ej__main__wrap{
+    margin-top: -20px;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: white;
+}
+
+.ej__writeBoard__selector__category, .ej__writeBoard__selector__title{
+    font-size: 1rem;
+    height: 2rem;
+}
+
+.ej__writeBoard__selector__title{
+    border :  1px solid black;
+    padding: 0;
+    height: 34px;
+}
+
+input{
+    vertical-align: middle;
+}
+
+select{
+    vertical-align: middle;
+}
+
+.ej__writeBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ej__writeBoard__selector{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ej__writeBoard__selector__title{
+    width: 20rem;
+    margin: 0 15px;
+}
+
+
+
+.ej__writeBoard__textarea textarea{
+    width: 41rem;
+    height: 30rem;
+}
+
+.ej__writeBoard__btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ej__writeBoard__btns button{
+    width: 3.6rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    background-color: #800080;
+    color: white;
+    border-radius: 10px;
+  }
+
+.ej__writeBoard__btns__write{
+    margin-left: 10px;
+}
+
+.ej__writeBoard__selector__image{
+    font-size: 1.6rem;
+}
+
+.ej__writeBoard__upload{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#ez__file{
+    opacity: 0;
+}
+
+/* Media Query 시작 */
+@media screen and (max-width:944px) {
+    #pc{
+        display: none;
+    }
+
+
+    .ej__logocommunity{
+        margin-left: 15px;
+    }
+
+
+    .ej__main__wrap{
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (min-width:945px) {
+    #mob{
+        display: none;
+    }
+}
+
+/* Media Query 끝 */

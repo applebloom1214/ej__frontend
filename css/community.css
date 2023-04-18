@@ -58,9 +58,9 @@ div.ejTable {
     font-weight: bold;
   }
 
-  .divTable.ejTable .divTableHeading{
-        
-  }
+.divTable.ejTable{
+  border-bottom: 1px solid purple;
+}
 
   .divTable.ejTable .divTableHeading .divTableHead {
     border-top: 2px solid purple;
@@ -79,21 +79,87 @@ div.ejTable {
     font-weight: bold;
   }
   .ejTable .tableFootStyle .links {
-       text-align: right;
+      text-align: right;
   }
   .ejTable .tableFootStyle .links a{
     display: inline-block;
-    background: #FFFF00;
     color: #800080;
     padding: 2px 8px;
     border-radius: 5px;
   }
+
+  .ejTable .tableFootStyle .links a:hover{
+    background-color: yellow;
+  }
+
   .ejTable.outerTableFooter {
     border-top: none;
   }
   .ejTable.outerTableFooter .tableFootStyle {
     padding: 3px 5px; 
   }
+
+  .divTableBody .divTableRow:hover{
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .divTableBtn{
+    margin-top: 5px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .divTableBtn a{
+    color: white;
+  }
+
+  .divTableBtn button{
+    width: 3.6rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    background-color: #800080;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .ejTableSearchDiv{
+    margin-top: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .ejTableSearchDiv__form{
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+  }
+
+  .ejTableSearchDiv select, input, button{
+    font-size: 1rem;
+  }
+
+  .ejTableSearchDiv input{
+    width: 20rem;
+    border: 2px solid #800080;
+    border-right: none;
+    border-left: none;
+  }
+
+  .ejTableSearchDiv select{
+    border: 2px solid #800080;
+  }
+
+  .ejTableSearchDiv button{
+    /* position: relative; */
+    /* left: -12px; */
+    background-color: #800080;
+    color: white;
+    border: 2px solid purple;
+  }
+
   /* DivTable.com */
   .divTable{ display: table; }
   .divTableRow { display: table-row; }
@@ -119,7 +185,47 @@ div.ejTable {
     .ej__main__wrap{
         width: 100%;
         font-size: 1rem;
-        margin-top: 20px;
+        margin-top: 70px;
+    }
+
+    .left__etc, .divTableCell__date{
+      font-size: 0.3rem;
+      color: gray;
+    }
+
+    .left__title{
+      font-size: 0.5rem;
+    }
+
+    .left__etc--purple{
+      color: #800080;
+    }
+
+    .divTable.ejTable{
+      border-top: 1px solid purple;
+    }
+
+    .ejTable .tableFootStyle .links a{
+      font-size: 0.5rem;
+      padding: 0 2px;
+    }
+
+    .divTableBtn button{
+      font-size: 0.5rem;
+      width: 2.6rem;
+    }
+
+    .divTableBtn{
+      height: 1.7rem;
+    }
+
+    .ejTableSearchDiv__form{
+      width: 90%;
+      height: 1.5rem;
+    }
+
+    .ejTableSearchDiv__form input, option{
+      font-size: 0.5rem;
     }
 
 }
