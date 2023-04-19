@@ -78,7 +78,61 @@
     </section>
 
     <!--MOBILE 화면 -->
-    <section id="mob"></section>
+    <section id="mob">
+      <header class="ej__header">
+        <div class="ej__logocommunity">
+          <input type="checkbox" id="menuicon" />
+          <label for="menuicon">
+            <span></span><span></span><span></span>
+          </label>
+          <div class="sidebar">
+            <div class="sidebarwrap">
+              <div class="sidebar__login">로그인을 해주세요</div>
+              <div class="sidebar__signup">회원가입</div>
+              <div class="sidebar__community">커뮤니티</div>
+            </div>
+          </div>
+          <img class="ej__logo" src="img/logo/logo.svg" />
+        </div>
+        <div class="ej__searchbar--mob">
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+      </header>
+      <main class="ej__main">
+        <div class="ej__main__wrap">
+          <div class="ej__main__introduce">
+            <h1>글쓰기</h1>
+          </div>
+          <div class="ej__writeBoard">
+            <div class="ej__writeBoard__selector">
+              <select class="ej__writeBoard__selector__category">
+                <option>구인</option>
+                <option>구직</option>
+                <option>잡담</option>
+              </select>
+              <input
+                type="text"
+                class="ej__writeBoard__selector__title"
+                placeholder="제목을 입력해주세요."
+              />
+            </div>
+            <div class="ej__writeBoard__upload">
+              <label for="ez__file" class="ej__writeBoard__selector__image">
+                <i class="fa-solid fa-image"></i>
+              </label>
+              <input type="file" id="ez__file" />
+            </div>
+            <div class="ej__writeBoard__textarea">
+              <textarea></textarea>
+            </div>
+            <div class="ej__writeBoard__btns">
+              <button class="ej__writeBoard__btns__cancel">취소</button>
+              <button class="ej__writeBoard__btns__write">등록</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
   </body>
   <script
     src="https://kit.fontawesome.com/cbc86f8bd3.js"

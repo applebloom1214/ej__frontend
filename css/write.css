@@ -136,6 +136,32 @@ select{
         margin-top: 70px;
     }
 
+    .ej__writeBoard{
+        width: 100%;   
+    }
+
+    .ej__writeBoard__selector{
+        width: 80%;
+    }
+
+    .ej__writeBoard__upload{
+        width: 80%;
+    }
+
+    .ej__writeBoard__textarea{
+        width: 80%;
+        display: flex;
+    }
+
+    .ej__writeBoard__textarea textarea{
+        width: 95%;
+        height: 20rem;
+    }
+
+    .ej__writeBoard__btns{
+        margin-top: 10px;
+        width: 75%;
+    }
 }
 
 @media screen and (min-width:945px) {
