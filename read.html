@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Job</title>
+    <link rel="stylesheet" href="css/read.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="icon" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="img/favicon/android-icon-48x48.png" sizes="48x48" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- PC 화면 -->
+    <section id="pc">
+      <header class="ej__header">
+        <div class="ej__logocommunity">
+          <img class="ej__logo" src="img/logo/logo.svg" />
+          <a href="community.html"
+            ><span class="ej__community">커뮤니티</span></a
+          >
+        </div>
+        <div class="ej__searchbar">
+          <input
+            type="text"
+            class="ej__searchbar__input"
+            placeholder="검색어를 입력해주세요."
+          />
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+        <div class="ej__rightnav">
+          <span class="ej__rightnav__home">홈으로</span>
+          <span class="ej__rightnav__login">로그인</span>
+          <span>회원가입</span>
+        </div>
+      </header>
+      <main class="ej__main">
+        <div class="ej__main__wrap">
+          <div class="ej__readBoard">
+            <div class="ej__readBoard__titleDiv">
+              <div class="ej__titleDiv__title">
+                이것은제목테스트입니다아아아아
+              </div>
+              <div class="ej__titleDiv__sub">
+                <div class="ej__sub__left">
+                  <div class="ej__sub__left__writer">글쓴이 ｜</div>
+                  <div class="ej__sub__left__date">2023.04.19 19:47:01</div>
+                </div>
+                <div class="ej__sub__right">
+                  <div class="ej__sub__right__hits">조회 1 ｜</div>
+                  <div class="ej__sub__right__recomm">추천 0 ｜</div>
+                  <div class="ej__sub__right__rep">댓글 0</div>
+                </div>
+              </div>
+            </div>
+            <div class="ej__readBoard__contentDiv">
+              <img
+                src="https://art.pixilart.com/28025e0c4aa12f5.png"
+                width="300px"
+                height="200px"
+              />
+              <div class="ej__readBoard__contentDiv__content">
+                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+                테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+              </div>
+              <div class="ej__readBoard__contentDiv__heartDiv">
+                <span class="ej__heartDiv__heart">
+                <i class="fa-solid fa-heart"></i>
+                <span class="ej__heartDiv__cnt">0</span>
+                </span>
+              </div>
+            </div>
+            <div class="ej__readBoard__replyDiv">
+              <div class="ej__readBoard__replyDiv__topDiv">
+                <span class="replyDiv__topDiv__totalcnt">전체 댓글 0개</span>
+                <select class="replyDiv__topDiv__sort">
+                  <option>등록순</option>
+                  <option>최신순</option>
+                  <option>답글순</option>
+                </select>
+              </div>
+              <div class="ej__readBoard__replyDiv__mainDiv">
+                <div class="replyDiv__mainDiv__writer">
+                  <input readonly placeholder="댓글러" />
+                </div>
+                <div class="replyDiv__mainDiv__contentDiv">
+                  <div class="contentDiv__textarea">
+                    <textarea></textarea>
+                  </div>
+                  <div class="contentDiv__btns">
+                    <button class="contentDiv__btn">등록</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="ej__readBoard__btns">
+                <button class="ej__readBoard__btns__write">등록</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!--MOBILE 화면 -->
+    <section id="mob">
+      <header class="ej__header">
+        <div class="ej__logocommunity">
+          <input type="checkbox" id="menuicon" />
+          <label for="menuicon">
+            <span></span><span></span><span></span>
+          </label>
+          <div class="sidebar">
+            <div class="sidebarwrap">
+              <div class="sidebar__login">로그인을 해주세요</div>
+              <div class="sidebar__signup">회원가입</div>
+              <div class="sidebar__community">커뮤니티</div>
+            </div>
+          </div>
+          <img class="ej__logo" src="img/logo/logo.svg" />
+        </div>
+        <div class="ej__searchbar--mob">
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+      </header>
+      <main class="ej__main">
+        <div class="ej__main__wrap">
+          <div class="ej__main__introduce">
+            <h1>글쓰기</h1>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/cbc86f8bd3.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

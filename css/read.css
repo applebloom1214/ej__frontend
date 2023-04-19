@@ -1,0 +1,201 @@
+html{
+    font-size: 18px;
+}
+
+body{
+    background-image: url('../img/background/yellow.avif');
+    font-family: 'Sunflower', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main 시작 */
+
+.ej__main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.ej__main__wrap{
+    margin-top: 10px;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: white;
+}
+
+.ej__readBoard{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    
+}
+
+.ej__readBoard__btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ej__readBoard__btns button{
+    width: 3.6rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    background-color: #800080;
+    color: white;
+    border-radius: 10px;
+}
+
+.contentDiv__btn{
+    width: 3rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
+    background-color: #800080;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.ej__readBoard__titleDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.ej__titleDiv__sub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ej__sub__left{
+    display: flex;
+}
+
+.ej__sub__right{
+    display: flex;
+}
+
+.ej__readBoard__contentDiv{
+    margin-top: 50px;
+}
+
+.ej__readBoard__contentDiv__content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ej__readBoard__contentDiv__heartDiv{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.ej__readBoard__replyDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.ej__readBoard__replyDiv__topDiv{
+    margin-bottom: 10px;
+}
+
+.ej__readBoard__replyDiv__mainDiv{
+    padding: 15px 0;
+    display: flex;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+}
+
+.contentDiv__textarea textarea{
+    width: 41rem;
+    height: 5rem;
+}
+
+.replyDiv__mainDiv__contentDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentDiv__btns{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.replyDiv__mainDiv__writer input{
+    text-align: center;
+}
+
+.replyDiv__mainDiv__writer{
+    margin-right: 10px;
+}
+
+.ej__readBoard__contentDiv__heartDiv i{
+    color: magenta;
+}
+
+.ej__heartDiv__heart{
+    border: 2px solid purple;
+    border-radius: 50px;
+    padding: 10px
+}
+
+
+/* Media Query 시작 */
+@media screen and (max-width:944px) {
+    #pc{
+        display: none;
+    }
+
+
+    .ej__logocommunity{
+        margin-left: 15px;
+    }
+
+
+    .ej__main__wrap{
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 70px;
+    }
+
+    .ej__readBoard{
+        width: 100%;   
+    }
+
+    .ej__readBoard__btns{
+        margin-top: 10px;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width:945px) {
+    #mob{
+        display: none;
+    }
+}
+
+/* Media Query 끝 */
