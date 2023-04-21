@@ -31,6 +31,7 @@ html{
 
 .ej__community{
     font-weight: bold;
+    margin-right: 30px;
 }
 
 .ej__searchbar{
@@ -181,6 +182,23 @@ input[id="menuicon"]:checked + label + div{
 
 .sidebar__signup{
     margin-bottom: 30px;
+}
+
+.sidebar__community{
+    margin-bottom: 30px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Side menu end */
