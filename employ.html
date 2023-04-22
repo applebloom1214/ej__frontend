@@ -47,51 +47,65 @@
           <div class="ej__main__introduce">
             <h1>구인하기</h1>
           </div>
-          <div class="ej__writeBoard">
-            <div class="ej__writeBoard__selector">
+          <div class="ej__employBoard">
+            <div class="ej__employBoard__selector">
               <!-- <select class="ej__writeBoard__selector__category">
                 <option>구인</option>
                 <option>구직</option>
                 <option>잡담</option>
               </select> -->
+              <label for="ej__employBoard__selector__title">제목</label>
               <input
                 type="text"
-                class="ej__writeBoard__selector__title"
+                id="ej__employBoard__selector__title"
                 placeholder="제목을 입력해주세요."
               />
+              <label for="ej__employBoard__selector__pay"
+                ><i class="fa-solid fa-dollar-sign"></i> 시급</label
+              >
               <input
                 type="text"
-                class="ej__writeBoard__selector__title"
-                placeholder="제목을 입력해주세요."
+                id="ej__employBoard__selector__pay"
+                placeholder="시급을 입력해주세요."
               />
+              <label for="ej__employBoard__selector__situation"
+                ><i class="fa-solid fa-location-dot"></i> 장소</label
+              >
               <input
                 type="text"
-                class="ej__writeBoard__selector__title"
-                placeholder="제목을 입력해주세요."
+                id="ej__employBoard__selector__situation"
+                placeholder="장소를 입력해주세요."
               />
+              <label for="ej__employBoard__selector__period"
+                ><i class="fa-solid fa-calendar"></i> 근무 기간</label
+              >
               <input
                 type="text"
-                class="ej__writeBoard__selector__title"
-                placeholder="제목을 입력해주세요."
+                id="ej__employBoard__selector__period"
+                placeholder="기간을 입력해주세요."
               />
+              <label for="ej__employBoard__selector__time"
+                ><i class="fa-solid fa-clock"></i> 근무 시간</label
+              >
               <input
                 type="text"
-                class="ej__writeBoard__selector__title"
-                placeholder="제목을 입력해주세요."
+                id="ej__employBoard__selector__time"
+                placeholder="시간을 입력해주세요."
               />
             </div>
-            <div class="ej__writeBoard__upload">
-              <label for="ez__file" class="ej__writeBoard__selector__image">
-                <i class="fa-solid fa-image"></i>
+            <div class="ej__employBoard__textarea">
+              <label><i class="fa-solid fa-pen"></i> 상세 요강</label>
+              <textarea></textarea>
+            </div>
+            <div class="ej__employBoard__upload">
+              <label for="ez__file" class="ej__employBoard__selector__image">
+                파일 첨부 <i class="fa-solid fa-image"></i>
               </label>
               <input type="file" id="ez__file" />
             </div>
-            <div class="ej__writeBoard__textarea">
-              <textarea></textarea>
-            </div>
-            <div class="ej__writeBoard__btns">
-              <button class="ej__writeBoard__btns__cancel">취소</button>
-              <button class="ej__writeBoard__btns__write">등록</button>
+            <div class="ej__employBoard__btns">
+              <button class="ej__employBoard__btns__cancel">취소</button>
+              <button class="ej__employBoard__btns__write">등록</button>
             </div>
           </div>
         </div>
@@ -123,33 +137,67 @@
       <main class="ej__main">
         <div class="ej__main__wrap">
           <div class="ej__main__introduce">
-            <h1>글쓰기</h1>
+            <h1>구인하기</h1>
           </div>
-          <div class="ej__writeBoard">
-            <div class="ej__writeBoard__selector">
+          <div class="ej__employBoard">
+            <div class="ej__employBoard__selector">
               <!-- <select class="ej__writeBoard__selector__category">
                 <option>구인</option>
                 <option>구직</option>
                 <option>잡담</option>
               </select> -->
+              <label for="ej__employBoard__selector__title">제목</label>
               <input
                 type="text"
-                class="ej__writeBoard__selector__title"
+                id="ej__employBoard__selector__title"
                 placeholder="제목을 입력해주세요."
               />
+              <label for="ej__employBoard__selector__pay"
+                ><i class="fa-solid fa-dollar-sign"></i> 시급</label
+              >
+              <input
+                type="text"
+                id="ej__employBoard__selector__pay"
+                placeholder="시급을 입력해주세요."
+              />
+              <label for="ej__employBoard__selector__situation"
+                ><i class="fa-solid fa-location-dot"></i> 장소</label
+              >
+              <input
+                type="text"
+                id="ej__employBoard__selector__situation"
+                placeholder="장소를 입력해주세요."
+              />
+              <label for="ej__employBoard__selector__period"
+                ><i class="fa-solid fa-calendar"></i> 근무 기간</label
+              >
+              <input
+                type="text"
+                id="ej__employBoard__selector__period"
+                placeholder="기간을 입력해주세요."
+              />
+              <label for="ej__employBoard__selector__time"
+                ><i class="fa-solid fa-clock"></i> 근무 시간</label
+              >
+              <input
+                type="text"
+                id="ej__employBoard__selector__time"
+                placeholder="시간을 입력해주세요."
+              />
             </div>
-            <div class="ej__writeBoard__upload">
-              <label for="ez__file" class="ej__writeBoard__selector__image">
-                <i class="fa-solid fa-image"></i>
+            <div class="ej__employBoard__textarea">
+              <label><i class="fa-solid fa-pen"></i> 상세 요강</label>
+              <textarea></textarea>
+            </div>
+            <div class="ej__employBoard__upload">
+              <label for="ez__file" class="ej__employBoard__selector__image">
+                파일 첨부 <i class="fa-solid fa-image"></i>
               </label>
               <input type="file" id="ez__file" />
             </div>
-            <div class="ej__writeBoard__textarea">
-              <textarea></textarea>
-            </div>
-            <div class="ej__writeBoard__btns">
-              <button class="ej__writeBoard__btns__cancel">취소</button>
-              <button class="ej__writeBoard__btns__write">등록</button>
+            <div class="ej__employBoard__btns">
+              <button class="ej__employBoard__btns__cancel">취소</button>
+              <button class="ej__employBoard__btns__write">등록</button>
             </div>
           </div>
         </div>
