@@ -18,6 +18,71 @@
     />
   </head>
   <body>
+    <div class="modal">
+      <div class="modal_body">
+        <div class="ej__employBoard">
+          <div class="ej__employBoard__selector">
+            <!-- <select class="ej__writeBoard__selector__category">
+              <option>구인</option>
+              <option>구직</option>
+              <option>잡담</option>
+            </select> -->
+              <h1>버거퀸</h1>
+            <label for="ej__employBoard__selector__title">제목</label>
+            <input
+              type="text"
+              id="ej__employBoard__selector__title"
+              value="버거퀸과 함께 미래를 ! ! !"
+              readonly
+            />
+            <label for="ej__employBoard__selector__pay"
+              ><i class="fa-solid fa-dollar-sign"></i> 시급</label
+            >
+            <input
+              type="text"
+              id="ej__employBoard__selector__pay"
+              value="시급 15,000원"
+              readonly
+            />
+            <label for="ej__employBoard__selector__situation"
+              ><i class="fa-solid fa-location-dot"></i> 장소</label
+            >
+            <input
+              type="text"
+              id="ej__employBoard__selector__situation"
+              value="경기도 부천시"
+              readonly
+            />
+            <label for="ej__employBoard__selector__period"
+              ><i class="fa-solid fa-calendar"></i> 근무 기간</label
+            >
+            <input
+              type="text"
+              id="ej__employBoard__selector__period"
+              value="월 ~ 금"
+              readonly
+            />
+            <label for="ej__employBoard__selector__time"
+              ><i class="fa-solid fa-clock"></i> 근무 시간</label
+            >
+            <input
+              type="text"
+              id="ej__employBoard__selector__time"
+              value="09 ~ 18"
+              readonly
+            />
+          </div>
+          <div class="ej__employBoard__textarea">
+            <label><i class="fa-solid fa-pen"></i> 상세 요강</label>
+            <textarea readonly>모집 요강은 이렇다</textarea>
+          </div>
+          <div class="ej__employBoard__btns">
+            <button class="ej__employBoard__btns__apply">지원</button>
+            <button class="ej__employBoard__btns__close"  onclick="modalClose()">닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- PC 화면 -->
     <section id="pc">
       <header class="ej__header">
@@ -82,72 +147,105 @@
             </div>
           </div>
           <div class="ej__main__recruits">
-            <div class="ej__main__recruits__text">외식 채용 정보</div>
+            <div class="ej__main__recruits__text">외식 채용 정보
+            </div>
             <div class="ej__main__recruits__wrap">
                 <div class="ej__main__recruit">
                     <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
+                    <div class="ej__main__recruit__etc">
+                      <span class="ej__main__recruits__etc--period">주 5일</span>
+                      <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+                  </div>
                     <div class="ej__main__recruit__etc">
                         <span class="ej__main__recruits__etc--location">경기 부천시</span>
                         <span class="ej__main__recruits__etc--pay">시 15,000</span>
                     </div>
+                    <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
                 </div>
                 <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
+                  <div class="ej__main__recruit__name">버거퀸(주)</div>
+                  <div class="ej__main__recruit__etc">
+                    <span class="ej__main__recruits__etc--period">주 5일</span>
+                    <span class="ej__main__recruits__etc--time">09 ~ 18</span>
                 </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
+                  <div class="ej__main__recruit__etc">
+                      <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                      <span class="ej__main__recruits__etc--pay">시 15,000</span>
+                  </div>
+                  <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+              </div>
+              <div class="ej__main__recruit">
+                <div class="ej__main__recruit__name">버거퀸(주)</div>
+                <div class="ej__main__recruit__etc">
+                  <span class="ej__main__recruits__etc--period">주 5일</span>
+                  <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+              </div>
+                <div class="ej__main__recruit__etc">
+                    <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                    <span class="ej__main__recruits__etc--pay">시 15,000</span>
                 </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
+                <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+            </div>
+            <div class="ej__main__recruit">
+              <div class="ej__main__recruit__name">버거퀸(주)</div>
+              <div class="ej__main__recruit__etc">
+                <span class="ej__main__recruits__etc--period">주 5일</span>
+                <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+            </div>
+              <div class="ej__main__recruit__etc">
+                  <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                  <span class="ej__main__recruits__etc--pay">시 15,000</span>
+              </div>
+              <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+          </div>
+          <div class="ej__main__recruit">
+            <div class="ej__main__recruit__name">버거퀸(주)</div>
+            <div class="ej__main__recruit__etc">
+              <span class="ej__main__recruits__etc--period">주 5일</span>
+              <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+          </div>
+            <div class="ej__main__recruit__etc">
+                <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                <span class="ej__main__recruits__etc--pay">시 15,000</span>
+            </div>
+            <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+        </div>
+        <div class="ej__main__recruit">
+          <div class="ej__main__recruit__name">버거퀸(주)</div>
+          <div class="ej__main__recruit__etc">
+            <span class="ej__main__recruits__etc--period">주 5일</span>
+            <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+        </div>
+          <div class="ej__main__recruit__etc">
+              <span class="ej__main__recruits__etc--location">경기 부천시</span>
+              <span class="ej__main__recruits__etc--pay">시 15,000</span>
+          </div>
+          <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+      </div>
+      <div class="ej__main__recruit">
+        <div class="ej__main__recruit__name">버거퀸(주)</div>
+        <div class="ej__main__recruit__etc">
+          <span class="ej__main__recruits__etc--period">주 5일</span>
+          <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+      </div>
+        <div class="ej__main__recruit__etc">
+            <span class="ej__main__recruits__etc--location">경기 부천시</span>
+            <span class="ej__main__recruits__etc--pay">시 15,000</span>
+        </div>
+        <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+    </div>
+    <div class="ej__main__recruit">
+      <div class="ej__main__recruit__name">버거퀸(주)</div>
+      <div class="ej__main__recruit__etc">
+        <span class="ej__main__recruits__etc--period">주 5일</span>
+        <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+    </div>
+      <div class="ej__main__recruit__etc">
+          <span class="ej__main__recruits__etc--location">경기 부천시</span>
+          <span class="ej__main__recruits__etc--pay">시 15,000</span>
+      </div>
+      <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+  </div>
             </div>
           </div>
         
@@ -218,72 +316,105 @@
             </div>
           </div>
           <div class="ej__main__recruits">
-            <div class="ej__main__recruits__text">외식 채용 정보</div>
+            <div class="ej__main__recruits__text">외식 채용 정보
+            </div>
             <div class="ej__main__recruits__wrap">
                 <div class="ej__main__recruit">
                     <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
+                    <div class="ej__main__recruit__etc">
+                      <span class="ej__main__recruits__etc--period">주 5일</span>
+                      <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+                  </div>
                     <div class="ej__main__recruit__etc">
                         <span class="ej__main__recruits__etc--location">경기 부천시</span>
                         <span class="ej__main__recruits__etc--pay">시 15,000</span>
                     </div>
+                    <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
                 </div>
                 <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
+                  <div class="ej__main__recruit__name">버거퀸(주)</div>
+                  <div class="ej__main__recruit__etc">
+                    <span class="ej__main__recruits__etc--period">주 5일</span>
+                    <span class="ej__main__recruits__etc--time">09 ~ 18</span>
                 </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
+                  <div class="ej__main__recruit__etc">
+                      <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                      <span class="ej__main__recruits__etc--pay">시 15,000</span>
+                  </div>
+                  <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+              </div>
+              <div class="ej__main__recruit">
+                <div class="ej__main__recruit__name">버거퀸(주)</div>
+                <div class="ej__main__recruit__etc">
+                  <span class="ej__main__recruits__etc--period">주 5일</span>
+                  <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+              </div>
+                <div class="ej__main__recruit__etc">
+                    <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                    <span class="ej__main__recruits__etc--pay">시 15,000</span>
                 </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
-                <div class="ej__main__recruit">
-                    <div class="ej__main__recruit__name">버거퀸(주)</div>
-                    <div class="ej__main__recruit__content">버거전문점/주5/홀 정직원/월차 제공/280+a/일요일 고정</div>
-                    <div class="ej__main__recruit__etc">
-                        <span class="ej__main__recruits__etc--location">경기 부천시</span>
-                        <span class="ej__main__recruits__etc--pay">시 15,000</span>
-                    </div>
-                </div>
+                <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+            </div>
+            <div class="ej__main__recruit">
+              <div class="ej__main__recruit__name">버거퀸(주)</div>
+              <div class="ej__main__recruit__etc">
+                <span class="ej__main__recruits__etc--period">주 5일</span>
+                <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+            </div>
+              <div class="ej__main__recruit__etc">
+                  <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                  <span class="ej__main__recruits__etc--pay">시 15,000</span>
+              </div>
+              <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+          </div>
+          <div class="ej__main__recruit">
+            <div class="ej__main__recruit__name">버거퀸(주)</div>
+            <div class="ej__main__recruit__etc">
+              <span class="ej__main__recruits__etc--period">주 5일</span>
+              <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+          </div>
+            <div class="ej__main__recruit__etc">
+                <span class="ej__main__recruits__etc--location">경기 부천시</span>
+                <span class="ej__main__recruits__etc--pay">시 15,000</span>
+            </div>
+            <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+        </div>
+        <div class="ej__main__recruit">
+          <div class="ej__main__recruit__name">버거퀸(주)</div>
+          <div class="ej__main__recruit__etc">
+            <span class="ej__main__recruits__etc--period">주 5일</span>
+            <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+        </div>
+          <div class="ej__main__recruit__etc">
+              <span class="ej__main__recruits__etc--location">경기 부천시</span>
+              <span class="ej__main__recruits__etc--pay">시 15,000</span>
+          </div>
+          <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+      </div>
+      <div class="ej__main__recruit">
+        <div class="ej__main__recruit__name">버거퀸(주)</div>
+        <div class="ej__main__recruit__etc">
+          <span class="ej__main__recruits__etc--period">주 5일</span>
+          <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+      </div>
+        <div class="ej__main__recruit__etc">
+            <span class="ej__main__recruits__etc--location">경기 부천시</span>
+            <span class="ej__main__recruits__etc--pay">시 15,000</span>
+        </div>
+        <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+    </div>
+    <div class="ej__main__recruit">
+      <div class="ej__main__recruit__name">버거퀸(주)</div>
+      <div class="ej__main__recruit__etc">
+        <span class="ej__main__recruits__etc--period">주 5일</span>
+        <span class="ej__main__recruits__etc--time">09 ~ 18</span>
+    </div>
+      <div class="ej__main__recruit__etc">
+          <span class="ej__main__recruits__etc--location">경기 부천시</span>
+          <span class="ej__main__recruits__etc--pay">시 15,000</span>
+      </div>
+      <button class="recruit__detail" onclick="detailBtn(this)">자세히</button>
+  </div>
             </div>
           </div>
       </main>
@@ -293,4 +424,5 @@
     src="https://kit.fontawesome.com/cbc86f8bd3.js"
     crossorigin="anonymous"
   ></script>
+  <script src="js/recruit.js"></script>
 </html>
