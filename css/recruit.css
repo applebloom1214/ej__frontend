@@ -128,6 +128,7 @@ a{
     font-size: 1rem;
 }
 
+
 .ej__main__recruit__name{
     margin-bottom: 10px;
     text-align: left;
@@ -324,7 +325,29 @@ textarea:focus{
     }
 
 
+    .modal_body{
+        width: 15rem;
+    }
 
+    .ej__employBoard__selector input{
+        height: 34px;
+        width: 14rem;
+    }
+    
+
+    .ej__employBoard__textarea textarea{
+        width: 14rem;
+        height: 15rem;
+    }
+
+    .ej__employBoard__textarea{
+        margin-left: 1rem;
+    }
+
+    .ej__employBoard__btns button{
+        width: 3rem;
+        height: 1.8rem;
+      }
 
 }
 
