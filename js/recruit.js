@@ -1,8 +1,10 @@
 const modal = document.querySelector('.modal');
 
+
     modal.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.classList.toggle('show');
+            document.querySelector('#modal_body').scrollTo(0,0);
 
             if (!modal.classList.contains('show')) {
                 body.style.overflow = 'auto';
@@ -19,7 +21,7 @@ const modal = document.querySelector('.modal');
 
     function detailBtn(btn){
         modal.classList.toggle('show');
-
+        document.querySelector('#modal_body').scrollTo(0,0);
         if (modal.classList.contains('show')) {
             body.style.overflow = 'hidden';
         }
