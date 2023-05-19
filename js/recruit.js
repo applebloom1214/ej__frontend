@@ -1,4 +1,5 @@
 const modal = document.querySelector('.modal');
+const body = document.querySelector('body');
 
 
     modal.addEventListener('click', (event) => {
