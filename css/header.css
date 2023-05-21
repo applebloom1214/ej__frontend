@@ -6,8 +6,8 @@ html{
 /* Header 시작 */
 
 .ej__header{
+    z-index: 3;
     position: relative;
-    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,6 +176,7 @@ input[id="menuicon"]:checked + label + div{
     justify-content: center;
 }
 
+
 .sidebar__login{
     margin-bottom: 30px;
 }
@@ -189,6 +190,7 @@ input[id="menuicon"]:checked + label + div{
 }
 
 .modal {
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -199,6 +201,10 @@ input[id="menuicon"]:checked + label + div{
     display: none;
 
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show {
+    display: flex;
 }
 
 /* Side menu end */
