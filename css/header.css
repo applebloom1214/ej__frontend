@@ -204,7 +204,21 @@ input[id="menuicon"]:checked + label + div{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal.show {
+.hModal{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hModal.show {
     display: flex;
 }
 

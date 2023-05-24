@@ -1,6 +1,9 @@
-const modal = document.querySelector('.modal');
+
+const hModal = document.querySelector('.hModal');
+console.log(hModal);
 const menuIcon = document.getElementById('menuicon');
 
+
 menuIcon.addEventListener('click', (event) => {
-        modal.classList.toggle('show');
+        hModal.classList.toggle('show');
 });
