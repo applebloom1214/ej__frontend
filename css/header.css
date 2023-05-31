@@ -169,12 +169,28 @@ input[id="menuicon"]:checked + label + div{
     left: 0;
 }
 
+.sidebar_test{
+    width: 300px;
+    height: 100%;
+    background: yellow;
+    position : fixed;
+    top:0;
+    left: 0px;
+    z-index: 4;
+    transition: all .35s;
+}
+
 .sidebarwrap{
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.side_closeBtn{
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
 
