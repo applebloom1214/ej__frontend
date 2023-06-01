@@ -1,15 +1,17 @@
 
 const hModal = document.querySelector('.hModal');
-const menuIcon = document.getElementById('menuicon');
 
-const sidebar_test = document.querySelector(".sidebar_test");
+const sidebar = document.querySelector(".sidebar");
 const side_closeBtn = document.querySelector('.side_closeBtn');
+const side_openBtn = document.querySelector('.side_openBtn');
 
 
 side_closeBtn.addEventListener('click', () => {
-        sidebar_test.style.left = "-300px";
+        sidebar.style.left = "-300px";
+        hModal.classList.toggle('show');
 });
 
-menuIcon.addEventListener('click', (event) => {
+side_openBtn.addEventListener('click', () => {
+        sidebar.style.left = "0px";
         hModal.classList.toggle('show');
 });
