@@ -123,6 +123,10 @@ html{
     justify-content: center;
 }
 
+.side_openBtn:hover{
+    transform: scale(1.1);
+}
+
 .side_closeBtn{
     font-size: 30px;
     margin-bottom: 30px;
