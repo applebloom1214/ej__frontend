@@ -123,6 +123,10 @@ html{
     justify-content: center;
 }
 
+.sidebar__login:hover{
+    transform: scale(1.05);
+}
+
 .side_openBtn:hover{
     transform: scale(1.1);
 }
