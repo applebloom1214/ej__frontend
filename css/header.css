@@ -131,6 +131,10 @@ html{
     transform: scale(1.1);
 }
 
+.sidebar__signup:hover{
+    transform: scale(1.05);
+}
+
 .side_closeBtn{
     font-size: 30px;
     margin-bottom: 30px;
