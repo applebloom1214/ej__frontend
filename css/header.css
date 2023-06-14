@@ -139,6 +139,10 @@ html{
     transform: scale(1.05);
 }
 
+.sidebar__employ:hover{
+    transform: scale(1.05);
+}
+
 .side_closeBtn{
     font-size: 30px;
     margin-bottom: 30px;
