@@ -143,6 +143,10 @@ html{
     transform: scale(1.05);
 }
 
+.ej__searchbar--mob:hover{
+    transform: scale(1.1);
+}
+
 .side_closeBtn{
     font-size: 30px;
     margin-bottom: 30px;
