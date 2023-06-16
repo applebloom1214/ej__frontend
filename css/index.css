@@ -66,6 +66,9 @@ a{
     transform: scale(1.1);
 }
 
+.ej__main__community__hotboard:hover{
+    background-color: rgb(250, 250, 107);
+}
 
 
 .ej__main__job--name{
