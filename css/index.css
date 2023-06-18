@@ -74,6 +74,10 @@ a{
     transform: scale(1.1);
 }
 
+.ej__employA:hover{
+    transform: scale(1.1);
+}
+
 .ej__main__job--name{
     margin-top: 30px;
 }
